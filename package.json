@@ -2,14 +2,19 @@
   "name": "wander-wise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "nodemailer": "^6.9.14",
+    "validator": "^13.12.0"
   }
 }
